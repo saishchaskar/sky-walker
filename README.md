@@ -25,9 +25,11 @@ Integrate with a Large Language Model (LLM) API to generate answers based on use
 
 Provide a React.js-based UI for users to input queries.
 Use Postman or similar tools for testing API endpoints.
+
 **Relevant Chunk Retrieval:**
 
 Retrieve the top 3 relevant chunks from the vector database based on the user query.
+
 **Answer Generation:**
 
 Pass the user query along with the retrieved chunks to the LLM API to generate a comprehensive answer.
