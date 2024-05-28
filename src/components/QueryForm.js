@@ -15,14 +15,15 @@ const QueryForm = ({ setAnswer }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="w-full max-w-md bg-white p-8 rounded-lg shadow-md z-10 bg-opacity-80">
       <input
         type="text"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder="Enter your question"
+        className="w-full p-2 border border-gray-300 rounded mb-4"
       />
-      <button type="submit">Ask</button>
+      <button type="submit" className="w-full bg-blue-500 text-white p-2 rounded">Ask</button>
     </form>
   );
 };

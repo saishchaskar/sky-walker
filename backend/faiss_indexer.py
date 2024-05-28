@@ -13,6 +13,14 @@ class FaissIndexer:
         dimension = embeddings.shape[1]
         self.index = faiss.IndexFlatL2(dimension)
         self.index.add(embeddings)
+        faiss.write_index(self.index, "faiss_index.idx")
+        self.model.save("sentence_transformer_model")
+
+    def load_index(self):
+        self.index = faiss.read_index("faiss_index.idx")
+        self.model = SentenceTransformer('sentence_transformer_model')
+        with open("chunks.txt", "r") as f:
+            self.chunks = [chunk.strip() for chunk in f.readlines()]
 
     def retrieve_top_k(self, query, k=3):
         query_embedding = self.model.encode([query])

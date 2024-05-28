@@ -1,7 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from faiss_indexer import FaissIndexer
-from generator import generate_answer
 import logging
 
 app = Flask(__name__)
@@ -11,6 +10,7 @@ CORS(app)
 logging.basicConfig(level=logging.DEBUG)
 
 indexer = FaissIndexer()
+indexer.load_index()  # Ensure the index and model are loaded
 
 @app.route('/ask', methods=['POST'])
 def ask():
@@ -18,7 +18,7 @@ def ask():
         data = request.get_json()
         query = data['query']
         top_chunks = indexer.retrieve_top_k(query)
-        answer = generate_answer(query, top_chunks)
+        answer = top_chunks[0]  # Always return the top chunk as the answer
         return jsonify({'answer': answer})
     except Exception as e:
         app.logger.error(f"Error: {e}")

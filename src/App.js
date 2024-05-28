@@ -6,8 +6,8 @@ function App() {
   const [answer, setAnswer] = useState('');
 
   return (
-    <div className="App">
-      <h1>RAG Application</h1>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
+      <h1 className="text-4xl font-bold mb-8">RAG Application</h1>
       <QueryForm setAnswer={setAnswer} />
       <AnswerDisplay answer={answer} />
     </div>
