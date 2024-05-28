@@ -1,10 +1,37 @@
-# Getting Started with Create React App
+# RAG Application for "Luke Skywalker" Wikipedia Page
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+This project implements a Retrieval-Augmented Generation (RAG) application using Python for backend processing, FAISS for vector similarity search, and React.js for the user interface. The main goal is to scrape the Wikipedia page of "Luke Skywalker," chunk the text, store it in a vector database, and use a Large Language Model (LLM) API to generate answers based on user queries.
+
+
+
+## Features
+
+**Web Scraping:**
+
+Scrape the Wikipedia page for "Luke Skywalker" to extract relevant text.
+
+**Text Chunking and Vector Storage:**
+Chunk the scraped text into smaller, manageable pieces.
+Store these chunks in a FAISS (Facebook AI Similarity Search) vector database using the all-MiniLM-L6-v2 model for embedding.
+
+**LLM API Integration:**
+
+Integrate with a Large Language Model (LLM) API to generate answers based on user queries.
+**Query Interface:**
+
+Provide a React.js-based UI for users to input queries.
+Use Postman or similar tools for testing API endpoints.
+**Relevant Chunk Retrieval:**
+
+Retrieve the top 3 relevant chunks from the vector database based on the user query.
+**Answer Generation:**
+
+Pass the user query along with the retrieved chunks to the LLM API to generate a comprehensive answer.
+Display the generated answer in the user interface.
 
 ### `npm start`
 
@@ -14,57 +41,3 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
