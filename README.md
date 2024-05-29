@@ -21,6 +21,8 @@ Store these chunks in a FAISS (Facebook AI Similarity Search) vector database us
 **LLM API Integration:**
 
 Integrate with a Large Language Model (LLM) API to generate answers based on user queries.
+
+
 **Query Interface:**
 
 Provide a React.js-based UI for users to input queries.
