@@ -12,31 +12,31 @@ This project implements a Retrieval-Augmented Generation (RAG) application using
 
 **Web Scraping:**
 
-Scrape the Wikipedia page for "Luke Skywalker" to extract relevant text.
+Scraped the Wikipedia page for "Luke Skywalker" to extract relevant text.
 
 **Text Chunking and Vector Storage:**
 
-Chunk the scraped text into smaller, manageable pieces.
-Store these chunks in a FAISS (Facebook AI Similarity Search) vector database using the all-MiniLM-L6-v2 model for embedding.
+Chunked the scraped text into smaller, manageable pieces.
+Stored these chunks in a FAISS (Facebook AI Similarity Search) vector database using the all-MiniLM-L6-v2 model for embedding.
 
 **LLM API Integration:**
 
-Integrate with a Large Language Model (LLM) API to generate answers based on user queries.
+Integrated with a Large Language Model (LLM) API to generate answers based on user queries.
 
 
 **Query Interface:**
 
-Provide a React.js-based UI for users to input queries.
-Use Postman or similar tools for testing API endpoints.
+Provided a React.js-based UI for users to input queries.
+Used Postman or similar tools for testing API endpoints.
 
 **Relevant Chunk Retrieval:**
 
-Retrieve the top 3 relevant chunks from the vector database based on the user query.
+Retrieved the top 3 relevant chunks from the vector database based on the user query.
 
 **Answer Generation:**
 
 Pass the user query along with the retrieved chunks to the LLM API to generate a comprehensive answer.
-Display the generated answer in the user interface.
+Displayed the generated answer in the user interface.
 
 ## Output Images
 ![Screenshot (205)](https://github.com/saishchaskar/sky-walker/assets/102912746/ab1e12f0-b14f-4050-a104-b6f0f1b63e7c)
