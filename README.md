@@ -41,7 +41,8 @@ Displayed the generated answer in the user interface.
 ## Output Images
 ![Screenshot (205)](https://github.com/saishchaskar/sky-walker/assets/102912746/ab1e12f0-b14f-4050-a104-b6f0f1b63e7c)
 ![Screenshot (206)](https://github.com/saishchaskar/sky-walker/assets/102912746/cb21af93-38b2-4d5c-a3f3-d385d8603b9f)
-![Screenshot (207)](https://github.com/saishchaskar/sky-walker/assets/102912746/c666f0dd-a2ea-4658-a81c-10b86ea2ff9e)
+![Screenshot (208)](https://github.com/saishchaskar/sky-walker/assets/102912746/e38c8eae-b5b3-4f8f-9ed8-997e7982e640)
+
 
 
 
