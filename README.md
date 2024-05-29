@@ -35,6 +35,13 @@ Retrieve the top 3 relevant chunks from the vector database based on the user qu
 Pass the user query along with the retrieved chunks to the LLM API to generate a comprehensive answer.
 Display the generated answer in the user interface.
 
+## Output Images
+![Screenshot (205)](https://github.com/saishchaskar/sky-walker/assets/102912746/ab1e12f0-b14f-4050-a104-b6f0f1b63e7c)
+![Screenshot (206)](https://github.com/saishchaskar/sky-walker/assets/102912746/cb21af93-38b2-4d5c-a3f3-d385d8603b9f)
+![Screenshot (207)](https://github.com/saishchaskar/sky-walker/assets/102912746/c666f0dd-a2ea-4658-a81c-10b86ea2ff9e)
+
+
+
 ### `npm start`
 
 Runs the app in the development mode.\
