@@ -15,6 +15,7 @@ This project implements a Retrieval-Augmented Generation (RAG) application using
 Scrape the Wikipedia page for "Luke Skywalker" to extract relevant text.
 
 **Text Chunking and Vector Storage:**
+
 Chunk the scraped text into smaller, manageable pieces.
 Store these chunks in a FAISS (Facebook AI Similarity Search) vector database using the all-MiniLM-L6-v2 model for embedding.
 
